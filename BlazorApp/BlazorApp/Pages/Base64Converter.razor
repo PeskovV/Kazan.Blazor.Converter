@@ -1,0 +1,43 @@
+﻿- Реализовать возможность конвертации
+- Вынести код в отдельный файл
+
+
+@page "/base64converter"
+@using System.Text
+
+<h1>Base 64 Converter</h1>
+
+<div class="form-group">
+    <textarea class="form-control col-md-6" placeholder="Non Base64" ></textarea>
+    <small class="form-text text-muted">Это строка, которая будет закодирована</small>
+</div>
+
+<button class="btn btn-primary" type="button" >
+    <span class="oi oi-arrow-thick-bottom"></span> Encode
+</button>
+
+<button class="btn btn-success" type="button" >
+    <span class="oi oi-arrow-thick-top"></span> Decode
+</button>
+
+<div class="form-group">
+    <textarea class="form-control col-md-6" placeholder="Base64" ></textarea>
+    <small class="form-text text-muted">Это строка, которую вы хотите разкодировать</small>
+</div>
+
+@code {
+
+    public string NonBase64Body { get; set; }
+    public string Base64Body { get; set; }
+
+    private void ConvertToBase64()
+    {
+        //logic
+    }
+
+    private void ConvertFromBase64()
+    {
+        //logic
+    }
+
+}
